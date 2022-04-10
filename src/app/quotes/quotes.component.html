@@ -1,12 +1,13 @@
-<div *ngFor="let quote of quotes">
+<div *ngFor="let quote of quotes; let i = index">
   <div id="quote-box">
-    <p id="editor">{{quote.editor}}</p>
-    <p id="quote">{{quote.quote}}</p>
-    <p id="author">~{{quote.author}}</p>
+    <p id={{i}} id="editor">{{quote.editor}}</p>
+    <p id={{i}} id="quote">{{quote.quote}}</p>
+    <p id={{i}} id="author">~{{quote.author}}</p>
   </div>
   <div>
-    <p>{{quote.publishedDate | date}}</p>
+    
+    <p id={{i}}>{{quote.publishedDate | date}}</p>
     <app-quote-detail [quote]='quote'></app-quote-detail>
-  </div>
-  
+    </div>
+  <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
 </div>

@@ -1,0 +1,27 @@
+<div class="container-fluid">
+  <h2 class="text-center">Create a new Quote</h2>
+  <hr>
+  <form>
+    <div class="form-group">
+      <label for="quote">Quote</label>
+      <textarea class="form-control" id="quote" rows="4" [(ngModel)]="newQuote.quote" name="quote" #quote='ngModel' required></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="author">Author</label>
+      <input type="text" required class="form-control" id="author" required>
+    </div>
+
+    <div class="form-group">
+      <label for="editor">Editor</label>
+      <input type="text" required class="form-control" id="editor">
+    </div>
+
+    <div class="form-group">
+      <label for="published">Input Date</label>
+      <input type='date' id="published">
+    </div>
+
+    <button type="submit" class="btn btn-success">Add Quote</button>
+    </form>
+  </div>

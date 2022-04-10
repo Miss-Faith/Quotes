@@ -9,7 +9,7 @@ export class CountclicksDirective {
 
   numberOfClicks = 0;
 
-  @HostListener("click", ["$event.target"]) onClick(btn) {
+  @HostListener("click", ["$event.target"]) onClicks() {
     this.numberOfClicks++
   }
  
