@@ -17,11 +17,12 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
     CountclicksDirective,
     QuoteDetailComponent,
     DateCountPipe,
-     QuoteFormComponent
+    QuoteFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
