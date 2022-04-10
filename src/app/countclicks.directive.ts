@@ -7,10 +7,10 @@ export class CountclicksDirective {
 
   constructor() { }
 
-  numberOfClicks = 0;
+  votes = 0;
 
   @HostListener("click", ["$event.target"]) onClicks() {
-    this.numberOfClicks++
+    this.votes++
   }
  
 }

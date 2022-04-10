@@ -5,8 +5,8 @@
     <p id={{i}} id="author">~{{quote.author}}</p>
   </div>
   <div>
-    <p id={{i}}>{{quote.publishedDate | date}}</p>
     <app-quote-detail [quote]='quote'></app-quote-detail>
-    </div>
+  </div>
+    
   <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
 </div>

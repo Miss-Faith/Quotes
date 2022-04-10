@@ -8,14 +8,14 @@ import { Quote } from '../quotes'
 })
 export class QuoteFormComponent implements OnInit {
 
-  newQuote = new Quote("","","",new Date());
+  newQuote = new Quote("","","",new Date(),0,0);
   
   @Output() addQuote = new EventEmitter<Quote>();
 
   submitQuote(){
     this.addQuote.emit(this.newQuote);
   }
-
+false
   constructor() { }
   
   ngOnInit(): void {

@@ -9,7 +9,7 @@ import { Quote } from '../quotes'
 export class QuotesComponent implements OnInit {
 
   quotes: Quote[] = [
-    new Quote("Mi Amor","The big lesson in life, baby, is never be scared of anyone or anything.", "Frank Sinatra", new Date(2019,17,12))
+    new Quote("Mi Amor","The big lesson in life, baby, is never be scared of anyone or anything.", "Frank Sinatra", new Date(2021,17,12),0,0)
   ];
 
   addNewQuote(quote) {
