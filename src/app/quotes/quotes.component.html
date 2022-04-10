@@ -1,12 +1,14 @@
-<div *ngFor="let quote of quotes; let i = index">
-  <div id="quote-box">
-    <p id={{i}} id="editor">{{quote.editor}}</p>
-    <p id={{i}} id="quote">{{quote.quotetext}}</p>
-    <p id={{i}} id="author">~{{quote.author}}</p>
-  </div>
-  <div>
-    <app-quote-detail [quote]='quote'></app-quote-detail>
-  </div>
-    
+<div>
+  <div class="card" *ngFor="let quote of quotes; let i = index">
+    <div class="card-body" class="card-body" id="quote-box">
+      <p class="card-text" id={{i}} id="quote">{{quote.quotetext}}</p>
+      <p class="card-text" id={{i}} id="author">~{{quote.author}}</p>
+    </div>
+    <div class="card-body">
+      <app-quote-detail [quote]='quote' (isDelete)="deleteQuote($event,i)"></app-quote-detail>
+    </div>  
+  </div>  
   <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
 </div>
+  
+

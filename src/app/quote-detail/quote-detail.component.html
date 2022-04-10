@@ -1,9 +1,10 @@
-<div>
+<div class="container-fluid">
   <div class="container-fluid" id="buttons">
     <button class="btn btn-sm btn-success" (click)="upvote()" type="button"> <i class="fa fa-thumbs-up" id="upvote"></i> {{quote.upvotes}} </button>
     <button class="btn btn-sm btn-danger"  (click)="downvote()" type="button"> <i class="fa fa-thumbs-down" id="downvote"></i> {{quote.downvotes}}</button>
   </div>
   <div>
     <p>Days since publication {{quote.publishedDate | dateCount }}</p>
+    <button (click)= 'quoteDelete(true)'>Delete</button>
   </div>
 </div>
