@@ -1,11 +1,10 @@
 <div *ngFor="let quote of quotes; let i = index">
   <div id="quote-box">
     <p id={{i}} id="editor">{{quote.editor}}</p>
-    <p id={{i}} id="quote">{{quote.quote}}</p>
+    <p id={{i}} id="quote">{{quote.quotetext}}</p>
     <p id={{i}} id="author">~{{quote.author}}</p>
   </div>
   <div>
-    
     <p id={{i}}>{{quote.publishedDate | date}}</p>
     <app-quote-detail [quote]='quote'></app-quote-detail>
     </div>
