@@ -17,6 +17,7 @@ h1 {
   width: 50%;
   font-weight: 400;
   }
-#author {
-  text-align: end;
- }
+
+  button {
+    border: 2px solid peru;   
+  }

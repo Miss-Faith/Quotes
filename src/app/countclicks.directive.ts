@@ -7,7 +7,7 @@ export class CountclicksDirective {
 
   constructor(private elem:ElementRef) { }
   highlightElement() {
-    this.elem.nativeElement.style.backgroundColor = 'blue';
+    this.elem.nativeElement.style.backgroundColor = 'peru';
     this.elem.nativeElement.style.color = 'black';
   }
   ngOnInit() {
