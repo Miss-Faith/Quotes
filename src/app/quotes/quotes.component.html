@@ -1,16 +1,17 @@
 <div>
-  <div *ngFor="let quote of quotes; let i = index">
-    <div appCountclicks *ngIf= 'highlighter(i) && quote.upvotes > 0'class="card">
+  <div class="row" *ngFor="let quote of quotes; let i = index">
+    <div class="col" class="card" appCountclicks *ngIf= 'highlighter(i) && quote.upvotes > 0'>
       <div class="card-body" id="quote-box">
         <p class="card-text" id={{i}} id="quote">{{quote.quotetext}}</p>
         <p class="card-text" id={{i}} id="author">~{{quote.author}}</p>
       </div>
       <div class="card-footer">
-      <button (click)='toggleDetails(i)'>Show Details</button>
-      <app-quote-detail *ngIf='quote.showMore' [quote]='quote' (isDelete)="deleteQuote($event,i)"></app-quote-detail>
+       <button (click)='toggleDetails(i)'>Show Details</button>
+       <app-quote-detail *ngIf='quote.showMore' [quote]='quote' (isDelete)="deleteQuote($event,i)"></app-quote-detail>
+       <br> 
+      </div>
     </div>
-    </div>
-    <div *ngIf= 'highlighter(i) && quote.upvotes === 0'class="card">
+    <div class="col-3" *ngIf= '!highlighter(i) || quote.upvotes === 0'class="card">
       <div class="card-body" id="quote-box">
         <p class="card-text" id={{i}} id="quote">{{quote.quotetext}}</p>
         <p class="card-text" id={{i}} id="author">~{{quote.author}}</p>
