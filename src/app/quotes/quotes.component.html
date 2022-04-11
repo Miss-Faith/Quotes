@@ -1,6 +1,6 @@
 <div>
   <div class="row" *ngFor="let quote of quotes; let i = index">
-    <div class="col" class="card" appCountclicks *ngIf= 'highlighter(i) && quote.upvotes > 0'>
+    <div class="col-4" class="card" appCountclicks *ngIf= 'highlighter(i) && quote.upvotes > 0'>
       <div class="card-body" id="quote-box">
         <p class="card-text" id={{i}} id="quote">{{quote.quotetext}}</p>
         <p class="card-text" id={{i}} id="author">~{{quote.author}}</p>
@@ -11,7 +11,7 @@
        <br> 
       </div>
     </div>
-    <div class="col-3" *ngIf= '!highlighter(i) || quote.upvotes === 0'class="card">
+    <div class="col-4" *ngIf= '!highlighter(i) || quote.upvotes === 0'class="card">
       <div class="card-body" id="quote-box">
         <p class="card-text" id={{i}} id="quote">{{quote.quotetext}}</p>
         <p class="card-text" id={{i}} id="author">~{{quote.author}}</p>
