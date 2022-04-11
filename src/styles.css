@@ -1,2 +1,15 @@
 @import "~bootstrap/dist/css/bootstrap.css";
-@import '~font-awesome/css/font-awesome.css'
+@import '~font-awesome/css/font-awesome.css';
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+
+body{
+    background-image: url("../src/assets/background.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+* {
+ font-family: 'Grape Nuts', cursive;
+ font-size: 20px;    
+}

@@ -1,4 +1,5 @@
 <div>
+  <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
   <div *ngFor="let quote of quotes; let i = index">
     <div class="col-4" class="card" appCountclicks *ngIf= 'highlighter(i) && quote.upvotes > 0'>
       <div class="card-body" id="quote-box">
@@ -22,7 +23,6 @@
     </div>
     </div>  
   </div>  
-  <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
 </div>
   
 
