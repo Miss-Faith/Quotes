@@ -1,12 +1,12 @@
 <div class="container-fluid">
   <div class="container-fluid" id="buttons">
-    <button class="btn btn-sm btn-success" (click)="upvote()" type="button"> <i class="fa fa-thumbs-up" id="upvote"></i> {{quote.upvotes}} </button>
-    <button class="btn btn-sm btn-danger"  (click)="downvote()" type="button"> <i class="fa fa-thumbs-down" id="downvote"></i> {{quote.downvotes}}</button>
+    <button class="btn btn-success" (click)="upvote()" type="button"> <i class="fa fa-thumbs-up" id="upvote"></i> {{quote.upvotes}} </button>
+    <button class="btn btn-danger"  (click)="downvote()" type="button"> <i class="fa fa-thumbs-down" id="downvote"></i> {{quote.downvotes}}</button>
+    <button class="btn btn-danger" (click)= 'quoteDelete(true)'><i class="fa fa-trash" id="downvote"></i></button>
   </div>
   <div>
     <p>Posted By :  {{quote.editor}}<br>
     Posted On : {{quote.publishedDate | date}}<br>
     Published  : {{quote.publishedDate | dateCount }} days ago</p>
-    <button class="btn btn-sm btn-danger" (click)= 'quoteDelete(true)'><i class="fa fa-trash" id="downvote"></i></button>
   </div>
 </div>
