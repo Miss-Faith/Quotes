@@ -1,19 +1,22 @@
 h1 {
-  color: aliceblue;
+  color: blanchedalmond;
+  background-color: black;
   text-align: center;
   padding: 20px;
   font-size: 40px;  
   font-weight: 400;
+  margin-bottom: 60px;
 }
 .card {
-  background-color: orange;
-  border: 10px solid green;
+  background-color: blanchedalmond;
+  border: 10px solid peru; 
   padding: 20px;
   margin: auto;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   text-align: center;   
-  width: 60%;   
-}
+  width: 50%;
+  font-weight: 400;
+  }
 #author {
   text-align: end;
  }

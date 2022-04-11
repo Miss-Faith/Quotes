@@ -1,9 +1,24 @@
 .container-fluid {
   width: 80%;    
 }
+
+h2{
+  color: blanchedalmond;
+  font-weight: bold;
+  background-color: black;    
+}
+
+form {
+  color: black;  
+}
+
+form-control {
+    background-color: blanchedalmond;   
+}
+
 .btn {
   color: blanchedalmond;  
-  background-color:peru;
+  background-color:black;
   margin-top: 2.5%;    
   margin-left: 30%;
   margin-right: auto;
