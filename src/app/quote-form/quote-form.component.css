@@ -1,3 +1,10 @@
 .container-fluid {
   width: 80%;    
 }
+.btn {
+  color: blanchedalmond;  
+  background-color:peru;
+  margin-top: 2.5%;    
+  margin-left: 30%;
+  margin-right: auto;
+}
